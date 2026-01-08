@@ -1,7 +1,17 @@
 # ninja log v6
-79	6027	7891288508230096	CMakeFiles/GuessMaster.dir/src/display.cpp.obj	ca16ec99331cad0d
-44	5959	7891288507880086	CMakeFiles/GuessMaster.dir/main.cpp.obj	74d7ae0a6971c871
-4458	5025	7891297218415429	GuessMaster.exe	14da851e21be217e
-39	4456	7891297174232372	CMakeFiles/GuessMaster.dir/src/initialization.cpp.obj	b69b3d4b538bac9d
-22	4627	7891319651028627	CMakeFiles/GuessMaster.dir/main.cpp.obj	74d7ae0a6971c871
-4628	5223	7891319697094320	GuessMaster.exe	14da851e21be217e
+875	8106	7894752548276374	CMakeFiles/GuessMaster.dir/src/display.cpp.obj	ca16ec99331cad0d
+13	5284	7895908328075020	CMakeFiles/GuessMaster.dir/main.cpp.obj	74d7ae0a6971c871
+5286	5712	7895908380791619	GuessMaster.exe	14da851e21be217e
+205	5143	7895906860750497	CMakeFiles/GuessMaster.dir/src/initialization.cpp.obj	b69b3d4b538bac9d
+52	4521	7895920648554119	CMakeFiles/GuessMaster.dir/main.cpp.obj	74d7ae0a6971c871
+81	4719	7895920648839294	CMakeFiles/GuessMaster.dir/src/initialization.cpp.obj	b69b3d4b538bac9d
+4720	5857	7895920695223719	GuessMaster.exe	14da851e21be217e
+25	3582	7895922737103827	CMakeFiles/GuessMaster.dir/main.cpp.obj	74d7ae0a6971c871
+3596	4024	7895922772810811	GuessMaster.exe	14da851e21be217e
+13	3417	7895923391125541	CMakeFiles/GuessMaster.dir/src/display.cpp.obj	ca16ec99331cad0d
+3418	3915	7895923425170302	GuessMaster.exe	14da851e21be217e
+15	4559	7895924568036020	CMakeFiles/GuessMaster.dir/src/initialization.cpp.obj	b69b3d4b538bac9d
+4561	5045	7895924613494198	GuessMaster.exe	14da851e21be217e
+23	3446	7895927395970069	CMakeFiles/GuessMaster.dir/src/display.cpp.obj	ca16ec99331cad0d
+14	3478	7895927395870119	CMakeFiles/GuessMaster.dir/main.cpp.obj	74d7ae0a6971c871
+3478	4272	7895927430517378	GuessMaster.exe	14da851e21be217e

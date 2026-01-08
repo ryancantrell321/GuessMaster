@@ -45,12 +45,18 @@ vector<string> wordPool = {
     "pyramid", "rabbit", "sphinx", "thunder", "vulture",
     "whale", "crystal", "dream", "flame", "lightning"
 };
+
+//==> play again algo
 bool ask_play_again() {
     cout << "Do you want to play again? (yes/no): ";
     string choice;
     cin >> choice;
     transform(choice.begin(), choice.end(), choice.begin(), ::tolower);
-    return (choice == "y" || choice == "yes");
+    if (choice == "y" || choice == "yes") return true;
+    else if (choice == "n" || choice == "no") {
+        cout << "Thank you for playing GUESS MASTER V1.0! Come back soon!\n" << endl;
+        return false;
+    }
 }
 
 //==> Random algorithm
@@ -60,20 +66,21 @@ string random_pick(vector<string> wp) {
 }
 
 //=> Game logic
-void play_game() {
+void play_game(int n, int t) {
     srand(time(nullptr));
     cin.ignore();
     cout << "Playing game..." << endl;
     enter_to_continue();
 
-    vector<string> pushed_words;
-    for (int i = 0; i < 4; i++) pushed_words.push_back(random_pick(wordPool));
-    int x = 0;
-    while (x < 3) {
+    int x = 0, tries = 3;
+    while (x < tries) {
+        vector<string> pushed_words;
+        for (int i = 0; i < n; i++) pushed_words.push_back(random_pick(wordPool));
+        
         cout << "Memorize these words: " << endl;
         for (int i = 0; i < pushed_words.size(); i++) cout << pushed_words[i] << " ";
         cout << endl;
-        delay(4);
+        delay(t);
         clear_screen();
 
         string y;
@@ -90,15 +97,15 @@ void play_game() {
         if (u_inp == pushed_words) {
             cout << "Correct!" << endl;
             if (ask_play_again()) {
-                play_game();
+                play_game(n, t);
             }
             return;
         }
         else {
             x++;
-            if (x < 3) {
+            if (x < tries) {
                 cout << "Incorrect! Try again!" << endl;
-                cout << "You have " << 3 - x << " tries left." << endl;
+                cout << "You have " << tries - x << " tries left." << endl;
                 enter_to_continue();
                 delay(2);
                 clear_screen();
@@ -110,7 +117,7 @@ void play_game() {
 
     cout << "3 tries failed. Game over!" << endl;
     if (ask_play_again()) {
-        play_game();
+        play_game(n, t);
     }
 }
 

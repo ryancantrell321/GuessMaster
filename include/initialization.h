@@ -6,6 +6,6 @@
 #define GUESSMASTER_INITIALIZATION_H
 void clear_screen();
 void enter_to_continue();
-void play_game();
+void play_game(int n, int t);
 
 #endif //GUESSMASTER_INITIALIZATION_H

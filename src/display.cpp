@@ -14,6 +14,14 @@ void menu() {
     cout << "3. Exit" << endl;
 }
 
+void levels() {
+    cout << "Choose game level" << endl;
+    cout << "1. Easy (5 words with 5 seconds visibility)" << endl;
+    cout << "2. Medium (10 words with 8 seconds visibility)" << endl;
+    cout << "3. Hard (15 words with 9 seconds visibility)" << endl;
+
+}
+
 void intro() {
     line(70);
     cout << setfill(' ') << setw(35) << "GUESS MASTER" << endl;
@@ -27,8 +35,8 @@ void intro() {
 
 void help() {
 
-    cout << "Memorize the word sequence and repeat it!"  << endl<< endl;
-    cout << "Each round adds one more word." << endl;
+    cout << "Memorize the word sequence and repeat it!"  << endl << endl;
+    cout << "Each level has increased number of words" << endl;
     cout << "Words are randomly selected from 100 options." << endl;
     cout << "Note: Answers are case-insensitive." << endl;
     line(70);

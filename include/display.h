@@ -7,5 +7,6 @@
 void line(int length);
 void intro();
 void menu();
+void levels();
 void help();
 #endif //GUESSMASTER_DISPLAY_H

@@ -24,35 +24,41 @@ Special Note: Assistance taken from AmazonQ for words dictionary's user input va
 using namespace std;
 
 int main() {
-
     intro();
-    menu();
 
-    int choice = 0, score = 0;
+    while (true){
+        menu();
 
-    cout << "Enter your choice: ";
-    cin >> choice;
+        int choice = 0;
+        cout << "Enter your choice (1/2/3): ";
+        cin >> choice;
 
-    switch (choice) {
+        switch (choice) {
 
-        case 1:
-            play_game();
-            break;
+            case 1:
+                levels();
+                int choice2;
+                cout << "Enter level (1/2/3): ";
+                cin >> choice2;
+
+                if (choice2 == 1) play_game(5, 4);
+                else if (choice2 == 2) play_game(10, 8);
+                else if (choice2 == 3) play_game(15, 9);
+                else continue;
+                break;
 
 
-        case 2:
-            help();
-            break;
+            case 2:
+                help();
+                break;
 
-        case 3:
-            exit(0);
+            case 3:
+                exit(0);
 
-        default:
-            cout << "Invalid choice" << endl;
+            default:
+                cout << "Invalid choice. Try again." << endl;
 
+        }
     }
-
-
-
     return 0;
-};
+}
